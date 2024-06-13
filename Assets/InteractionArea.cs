@@ -8,6 +8,12 @@ public class InteractionArea : MonoBehaviour
     public Text txtPuntaje;
     public GameObject filete;
     int puntaje = 0;
+
+    void Start()
+    {
+        txtPuntaje.text = "Puntaje: " + puntaje.ToString();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         //Obtener nombre de objeto colisionado
